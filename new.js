@@ -30,10 +30,37 @@
 // console.log(a[0])
 // console.log(a[1])
 
-var ary=[10,20,30,40]
-document.write("<ul>")
-for(var a=0; a<=4; a++){
-    document.write("<li>"+ary[a]+"</li>");
+// var ary=[10,20,30,40]
+// document.write("<ul>")
+// for(var a=0; a<=4; a++){
+//     document.write("<li>"+ary[a]+"</li>");
 
+// }
+// document.write("</ul>")
+
+// var arr=new Array(3);
+// for(let b=0; b<3;b++){
+//     arr[b]=prompt("enter you name")
+
+// }
+// document.write(arr[b])
+// var ary=new Array();
+// ary[0]=1;
+// ary[3]=4;
+// ary[5]=6;
+// for(a=0;a<6;a++){
+//     // document.write(arr[a]);
+//      console.log(ary[a]);
+// }
+
+
+var arr=[
+    ["gaurav",22,"male","bca"],
+    ["gaurav",21,"male","bca"],
+    ["gaurav",20,"male","bca"],
+    ["gaurav",123,"male","bca"],
+];
+for(var a=0; a<4; a++){
+// document.write(arr);
+console.log(arr)
 }
-document.write("</ul>")
