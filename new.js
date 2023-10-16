@@ -54,13 +54,13 @@
 // }
 
 
-var arr=[
-    ["gaurav",22,"male","bca"],
-    ["gaurav",21,"male","bca"],
-    ["gaurav",20,"male","bca"],
-    ["gaurav",123,"male","bca"],
-];
-for(var a=0; a<4; a++){
-// document.write(arr);
-console.log(arr)
-}
+// var arr=[
+//     ["gaurav",22,"male","bca"],
+//     ["gaurav",21,"male","bca"],
+//     ["gaurav",20,"male","bca"],
+//     ["gaurav",123,"male","bca"],
+// ];
+// for(var a=0; a<4; a++){
+// // document.write(arr);
+// console.log(arr)
+// }
