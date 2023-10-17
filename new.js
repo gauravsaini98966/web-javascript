@@ -64,3 +64,60 @@
 // // document.write(arr);
 // console.log(arr)
 // }
+
+
+// let myfunction=()=>console.log("hello")
+
+// myfunction();
+
+
+// let hello=function(name,age){
+// return  `${name}${age}`;
+// }
+
+// let new2=()=>{
+//     console.log('hello')
+//     console.log("hejenfdm")
+//     console.log("fnnnjdsf")
+// }
+// new2();
+// hello()
+// console.log(hello("hello sir",12));
+// console.log(typeof hello)
+
+
+// class index{
+//     constructor(){
+//         console.log("constructer")
+//     }
+//     messagae(){
+//         console.log("hello");
+
+//     }
+//     hello(){
+//         console.log("helo hhiii")
+//     }
+//     static gau(){
+//         console.log("jjjjjjjjjjjj")
+//     }
+
+// }
+// let a=new index();
+// a.messagae();
+// a.heloo();
+
+class student{
+    constructor(){
+        let name;
+        console.log("constructer fuction");
+
+    }
+
+    hello(){
+        console.log("hello"+this.name)
+    }
+
+}
+let a=new student();
+a.name="gaurav";
+ a.hello();
