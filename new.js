@@ -106,18 +106,62 @@
 // a.messagae();
 // a.heloo();
 
-class student{
-    constructor(){
-        let name;
-        console.log("constructer fuction");
+// class student{
+//     constructor(){
+//         let name;
+//         console.log("constructer fuction");
 
+//     }
+
+//     hello(){
+//         console.log("hello"+this.name)
+//     }
+
+// }
+// let a=new student();
+// a.name="gaurav";
+//  a.hello();
+
+// var person={
+//     firstname:"gaurav",
+//     sirname:"saini",
+
+//     fullyname:function(){
+//         return this.firstname+this.sirname;
+//     }
+    
+// }
+// document.write(person.firstname()+person.sirname());
+// // console.log(person.firstname()+person.sirname())
+
+// fullyname();
+
+// class student{
+//     constructor(name,age){
+//         let name;
+//         console.log("constructer function")
+//     }
+//     hello(){
+//         console.log("hello"+this.name)
+//     }
+
+// }
+// let a=new student("gaurav",23);
+// a.name="gaurav";
+
+// class student2 extends student 
+
+
+class employe{
+    constructor(name){
+        console.log("constructer:Employe"+name)
     }
-
-    hello(){
-        console.log("hello"+this.name)
-    }
-
 }
-let a=new student();
-a.name="gaurav";
- a.hello();
+
+class manager extends employe{
+
+    constructor(name){
+        console.log("constructor:manager"+name);
+    }
+}
+let a=new manager("gaurav");

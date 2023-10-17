@@ -354,8 +354,28 @@
 
 // myfunction();
 
-let myfunction=()=>console.log("hello")
+// let myfunction=()=>console.log("hello")
 
+
+
+class employe{
+    constructor(name){
+        this.emp=name;
+        console.log("constructer:Employe "+name)
+    }
+    info(){
+        console.log("employe name")
+    }
+}
+
+class manager extends employe{
+
+    constructor(name){
+        super(name)
+        console.log("constructor:manager "+name);
+    }
+}
+let a=new manager("gaurav");
 </script>
 </body>
 </html> 
