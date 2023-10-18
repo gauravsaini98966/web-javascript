@@ -2,13 +2,13 @@
 // console.log(c.length)
 
  
-let girl1 = "janvi"
-  let  girl2="bhumika"
+// let girl1 = "janvi"
+//   let  girl2="bhumika"
 
 
-let sentance=${girl1}+ 'is friend of' +${ girl2};
-console.log(sentance)
-document.write(sentance)
+// let sentance=${girl1}+ 'is friend of' +${ girl2};
+// console.log(sentance)
+// document.write(sentance)
 
 //  let a='bnana'
 //  console.log(a)

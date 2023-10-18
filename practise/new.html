@@ -364,7 +364,7 @@ class employe{
         console.log("constructer:Employe "+name)
     }
     info(){
-        console.log("employe name")
+        console.log("employe name"+this.emp)
     }
 }
 
@@ -372,6 +372,7 @@ class manager extends employe{
 
     constructor(name){
         super(name)
+        super.info();
         console.log("constructor:manager "+name);
     }
 }
