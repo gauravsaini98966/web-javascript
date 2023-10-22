@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function valid(){
+        var name=document.f1.name.value;
+        var passward=document.f1.passward.value;
+        var status =false;
+        if(name==""){
+document.getElementById("namelocation").innerHTML="please enter the name"
+    status=false;
+        }
+        else{
+            document.getElementById("namelocation").innerHTML=" <img src='http://www.javatpoint.com/javascriptpages/images/checked.gif'/>";
+            status=true;
+
+        }
+
+        if(passward.length<6){
+        document.getElementById("passwardlocation").innerHTML="passward must be greater than 6";
+         status=false;
+        }
+        else{
+            document.getElementById("passwardlocation").innerHTML="<img src='http://www.javatpoint.com/javascriptpages/images/checked.gif'/>" ;
+            status=true;
+
+        }
+
+return status;
+
+        }
+    </script>
+
+
+
+
+
+
+    <form name="f1" action="http://www.javatpoint.com/javascriptpages/valid.jsp"  onsubmit="return valid()">
+   Name:<input type="text" name="name">
+   <span id="namelocation" style="color: red;"></span><br>
+   password: <input type="password" name="passward">
+   <span id="passwardlocation" name="passward" style="color: red;"></span><br>
+
+   <input type="submit" value="register">
+
+
+    </form>
+</body>
+</html>

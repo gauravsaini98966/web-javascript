@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function macth_password_pass(){
+            var firstname=document.f1.passward.value;
+            var secondname=document.f1.passward2.value;
+
+            if(firstname==secondname){
+                alert("you passward is correct");
+
+                return true;
+            
+                
+            }
+               
+            else{
+                alert("passward is incorect")
+            }
+        }
+
+
+    </script>
+    
+
+    <form action="" name="f1" onsubmit="return macth_password_pass()" >
+        password: <input type="password" name="passward"><br>
+        re-password <input type="password" name="passward2"><br>
+        <input type="submit" name="submir">
+
+
+
+    </form>
+</body>
+</html>

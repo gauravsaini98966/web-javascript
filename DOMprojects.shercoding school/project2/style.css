@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body,html{
+height: 100%;
+width: 100%;
+}
+body{
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+#cantainer{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+#cantainer img{
+    height: 100%;
+    width: 100%;
+        object-fit: cover;
+        object-position: top;
+}
+#cantainer i{
+    color:#E1306C;
+    font-size: 70px;
+    position: absolute;
+    
+    top: 50%;
+left: 50%;
+transform: translate(-50%,-50%) scale(0);
+/* opacity: 0.9; */
+transition: all ease-in 0.4s
+}
