@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.abc{
+    width: 100%;
+    height: 200px;
+    background-color: red;
+}
+.bca{
+    background-color: green;
+}
+</style>
+<body>
+
+
+
+    <div id="xyz" class="abc">
+  
+    </div>
+
+
+
+    <script> 
+var   element;
+document.getElementById("xyz").addEventListener("click",abc);
+
+function abc(){
+    document.getElementById("xyz").classList.add("xyz","bca");
+}
+
+
+        </script>
+</body>
+</html>

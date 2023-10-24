@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openwindow()">open window</button>
+    <button onclick="movewindow()">move window</button>
+
+    <script>
+        var mywindow;
+        function openwindow(){
+            // mywindow=window.open("https://www.google.com");
+            mywindow=window.open("width=500px","height=200px");
+            mywindow.document.write("<p> this is my new window</p>")
+        }
+        function movewindow(){
+            mywindow.moveTo(100,100)
+            mywindow.focus();
+        }
+    </script>
+</body>
+</html>
