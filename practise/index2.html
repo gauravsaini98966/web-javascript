@@ -1,44 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Move Data from Input 2 to Input 1</title>
 </head>
 <body>
-    
-<!-- <p id="demo"></p>
+    <div>
+        <label for="input1">Input 1:</label>
+        <input type="text" id="input1" name="input1" placeholder="Enter value for Input 1">
+        <button id="deleteButton">Delete</button>
+    </div>
 
+    <br>
 
-    <script>
-      try{
-        addalert("welcome guest");
-      }
-      catch{
-        document.getElementById("demo").innerHTML=err.massage;
-      } -->
-    <!-- </script> -->
-    <input type="text" id="demo">
-    <button type="button" onclick="myFunction()">Test Input </button>
-    <p id="p01"></p>
-
+    <div>
+        <label for="input2">Input 2:</label>
+        <input type="text" id="input2" name="input2" placeholder="Enter value for Input 2">
+        <button id="addTaskButton">Add Task</button>
+    </div>
 
     <script>
-       function myFunction(){
-        const message=document.getElementById("p01");
-        message.innerHtml="";
-        let x=document.getElementById("demo").value;
-        try{
-            if(x.trim() == "")throw "empty";
-            if(isNaN(x)) throw "not a number";
-            x=Number(x);
-            if(x<5) throw "too low";
-            if(x>10) throw "too high";
-        }
-        catch(err){
-            message.innerHtml="input is "+err;
-        }
-       }
+        document.getElementById('addTaskButton').addEventListener('click', function () {
+            // Get the values of input 1 and input 2
+            var input1Value = document.getElementById('input1').value;
+            var input2Value = document.getElementById('input2').value;
+
+            // Move input 2 value to input 1
+            document.getElementById('input1').value = input2Value;
+
+            // Clear input 2
+            document.getElementById('input2').value = '';
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html> -->
+<!-- <html>
+<head>
+    <title>Add Input Fields Dynamically</title>
+</head>
+<body>
+    <div>
+        <label for="input1">Input 1:</label>
+        <input type="text" id="input1" name="input1" placeholder="Enter value for Input 1">
+        <button id="deleteButton">Delete</button>
+    </div>
+
+    <div id="input2Container">
+        <label for="input2">Input 2:</label>
+        <input type="text" id="input2" name="input2" placeholder="Enter value for Input 2">
+        <button id="addTaskButton">Add Task</button>
+    </div>
+
+    <script>
+        document.getElementById('addTaskButton').addEventListener('click', function () {
+            // Get the value of Input 2
+            var input2Value = document.getElementById('input2').value;
+
+            // Copy the value from Input 2 to Input 1
+            document.getElementById('input1').value = input2Value;
+
+            // Create a new Input 1 field and append it below Input 2
+            var input1Clone = document.getElementById('input1').cloneNode(true);
+            input1Clone.value = '';
+            document.getElementById('input2Container').appendChild(input1Clone);
+        });
+
+        document.getElementById('deleteButton').addEventListener('click', function () {
+            // Clear the value of Input 1
+            document.getElementById('input1').value = '';
+        });
     </script>
 </body>
 </html>
+In this updated code, when you click the "Delete" button, the value in "Input 1" is cleared, effectively removing the data. -->
+
+
+
+
+ 
+ <html>
+    <head>
+        <title>Add/Remove Input Fields Dynamically</title>
+    </head>
+    <body>
+        <div id="input1Container">
+            <label for="input1">Input 1:</label>
+            <input type="text" id="input1" name="input1" placeholder="Enter value for Input 1">
+            <button id="deleteButton">Delete</button>
+        </div>
+    
+        <div id="input2Container">
+            <label for="input2">Input 2:</label>
+            <input type="text" id="input2" name="input2" placeholder="Enter value for Input 2">
+            <button id="addTaskButton">Add Task</button>
+        </div>
+    
+        <script>
+            document.getElementById('addTaskButton').addEventListener('click', function () {
+                // Get the value of Input 2
+                var input2Value = document.getElementById('input2').value;
+    
+                // Copy the value from Input 2 to Input 1
+                document.getElementById('input1').value = input2Value;
+    
+                // Create a new Input 1 field and a new Delete button
+                var input1Clone = document.getElementById('input1Container').cloneNode(true);
+                input1Clone.querySelector('input').value = '';
+                input1Clone.querySelector('button').addEventListener('click', function () {
+                    // Clear the value of the associated Input 1 and remove it along with the Delete button
+                    input1Clone.querySelector('input').value = '';
+                    input1Clone.parentNode.removeChild(input1Clone);
+                });
+    
+                document.getElementById('input2Container').appendChild(input1Clone);
+            });
+        </script>
+    </body>
+    </html>
